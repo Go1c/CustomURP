@@ -50,12 +50,12 @@ namespace UnityEngine.Rendering.Universal
         RenderTargetHandle m_AfterPostProcessColor;
         RenderTargetHandle m_ColorGradingLut;
 
-        //³¡¾°×îºóÐèÒª¿½±´½øÕâ¸öbuffer;
-        //Õâ¸öbufferÒ²ÊÇuiÏà»úµÄRenderBuffer;
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½buffer;
+        //ï¿½ï¿½ï¿½bufferÒ²ï¿½ï¿½uiï¿½ï¿½ï¿½ï¿½ï¿½RenderBuffer;
         RenderTargetHandle m_SceneFinalColorAttachment;
-        //ÓÃÀ´´¦Àícolor surface dimension ºÍ depth surface dimension²»Ò»ÖÂÎÊÌâ;
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½color surface dimension ï¿½ï¿½ depth surface dimensionï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
         RenderTargetHandle m_SceneFinalDepthAttachment;
-        //½«³¡¾°Ïà»úºÍUIÏà»ú·Ö¿ªäÖÈ¾;³¡¾°Ïà»ú×ßÏßÐÔäÖÈ¾;uiÏà»ú×ßgammaäÖÈ¾;
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½UIï¿½ï¿½ï¿½ï¿½Ö¿ï¿½ï¿½ï¿½È¾;ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¾;uiï¿½ï¿½ï¿½ï¿½ï¿½gammaï¿½ï¿½È¾;
         bool m_SplitUICameraAndSceneCameraRenderer = true;
         public void ChangeSplitUICameraAndSceneCameraRenderer(out bool tag)
         {
@@ -348,7 +348,7 @@ namespace UnityEngine.Rendering.Universal
             bool additionalLightShadows = m_AdditionalLightsShadowCasterPass.Setup(ref renderingData);
             bool transparentsNeedSettingsPass = m_TransparentSettingsPass.Setup(ref renderingData);
             
-            //ÉèÖÃÏà»úµÄäÖÈ¾buffer;
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¾buffer;
             RefreshRenderBufferForSingleCamera(context, ref renderingData, ref cameraData, 
                 out bool requiresDepthPrepass, out bool createDepthTexture);
 
@@ -558,8 +558,8 @@ namespace UnityEngine.Rendering.Universal
             }
 #endif
 
-            //½«³¡¾°Ïà»úºó´¦ÀíºóµÄ½á¹û¿½±´µ½RT;
-            //Èç¹ûÖ»ÓÐcamera mainÒ»¸öÏà»ú,Ôò²»Òªgamma½ÃÕý;
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½RT;
+            //ï¿½ï¿½ï¿½Ö»ï¿½ï¿½camera mainÒ»ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Òªgammaï¿½ï¿½ï¿½ï¿½;
             if (m_SplitUICameraAndSceneCameraRenderer && cameraData.renderType == CameraRenderType.Base
                 && cameraData.camera == Camera.main && !lastCameraInTheStack)
             {
