@@ -9,7 +9,11 @@ URP版本： 7.5.2       (后续需要考虑升级到2020版本Unity  解决了�
 
 3，修正FXAA在最后pass渲染，导致UI模糊问题
 
-<img src="Res/img/41m9vmdtnI4.jpg" alt="41m9vmdtnI4" style="zoom: 10%;" />
+<img src="Res/img/41m9vmdtnI4.jpg" alt="41m9vmdtnI4" style="zoom: 05%;" />
+
+
+
+
 
 
 
