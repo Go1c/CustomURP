@@ -50,7 +50,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+     <Compile Include="Assets\4.CustomShaderGUI\Editor\CreateURPShader.cs" />
+     <Compile Include="Assets\4.CustomShaderGUI\Editor\PropertyDraw\PropertyGUI_Foldout.cs" />
+     <Compile Include="Assets\4.CustomShaderGUI\Editor\PropertyDraw\PropertyGUI_Switch.cs" />
+     <Compile Include="Assets\4.CustomShaderGUI\Editor\PropertyDraw\PropertyGUI_Texture.cs" />
+     <Compile Include="Assets\4.CustomShaderGUI\Editor\PropertyDraw\PropertyGUI_Vector.cs" />
+     <Compile Include="Assets\4.CustomShaderGUI\Editor\PropertyDraw\ProppertyGUI_Range.cs" />
+     <Compile Include="Assets\4.CustomShaderGUI\Editor\SimpleShaderGUI.cs" />
+     <None Include="Assets\4.CustomShaderGUI\Editor\Template\NewUnlitShader.shader" />
+     <None Include="Assets\4.CustomShaderGUI\Editor\Template\URPShader.shader" />
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>/Users/cuizhiqiang/Study/CustomURP/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>

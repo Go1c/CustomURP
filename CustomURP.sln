@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Core.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Universal.Editor.Tests", "Unity.RenderPipelines.Universal.Editor.Tests.csproj", "{ee4f2712-35a2-4001-61d7-39da78b07aa7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{14a3f6b5-d906-4f04-e4a5-fa249d4e6fde}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,10 @@ Global
 		{ee4f2712-35a2-4001-61d7-39da78b07aa7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ee4f2712-35a2-4001-61d7-39da78b07aa7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ee4f2712-35a2-4001-61d7-39da78b07aa7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14a3f6b5-d906-4f04-e4a5-fa249d4e6fde}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14a3f6b5-d906-4f04-e4a5-fa249d4e6fde}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14a3f6b5-d906-4f04-e4a5-fa249d4e6fde}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14a3f6b5-d906-4f04-e4a5-fa249d4e6fde}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
