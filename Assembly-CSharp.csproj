@@ -50,16 +50,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\AutoLoadPipelineAsset.cs" />
-     <Compile Include="Assets\BlurGlass\Scripts\GlassBlurRenderPass.cs" />
-     <Compile Include="Assets\BlurGlass\Scripts\GlassBlurRenderPassFeature.cs" />
-     <Compile Include="Assets\BlurGlass\Scripts\GlassCtrl.cs" />
-     <Compile Include="Assets\BlurGlass\Scripts\MainRender.cs" />
+     <Compile Include="Assets\1.BlurGlass\Scripts\GlassBlurRenderPass.cs" />
+     <Compile Include="Assets\1.BlurGlass\Scripts\GlassBlurRenderPassFeature.cs" />
+     <Compile Include="Assets\1.BlurGlass\Scripts\GlassCtrl.cs" />
+     <Compile Include="Assets\1.BlurGlass\Scripts\MainRender.cs" />
+     <Compile Include="Assets\2.UILinear2GammaTest\AutoLoadPipelineAsset.cs" />
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
-     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-     <None Include="Assets\BlurGlass\Resources\GlassBlur.shader" />
-     <None Include="Assets\BlurGlass\Resources\Black.shader" />
-     <None Include="Assets\BlurGlass\Resources\SeparableBlur.shader" />
+     <None Include="Assets\1.BlurGlass\Resources\GlassBlur.shader" />
+     <None Include="Assets\1.BlurGlass\Resources\Black.shader" />
+     <None Include="Assets\1.BlurGlass\Resources\SeparableBlur.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/cuizhiqiang/Study/CustomURP/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
