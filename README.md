@@ -19,4 +19,8 @@ URP版本： 7.5.2       (后续需要考虑升级到2020版本Unity  解决了�
 
 -----------
 
-基于  https://github.com/tkweizhong/CustomURP   基础上进行学习及优化
+[CustomURP]: 1.基于  https://github.com/tkweizhong/CustomURP   基础上进行学习及优化
+
+2. [UnityCustomShaderGui]: https://github.com/Straw1997/UnityCustomShaderGUI
+
+   
