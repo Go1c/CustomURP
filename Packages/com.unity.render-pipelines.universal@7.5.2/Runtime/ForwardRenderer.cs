@@ -50,12 +50,12 @@ namespace UnityEngine.Rendering.Universal
         RenderTargetHandle m_AfterPostProcessColor;
         RenderTargetHandle m_ColorGradingLut;
 
-        //���������Ҫ���������buffer;
-        //���bufferҲ��ui�����RenderBuffer;
+        //场景最后需要拷贝进这个buffer;
+        //这个buffer也是ui相机的RenderBuffer;
         RenderTargetHandle m_SceneFinalColorAttachment;
-        //��������color surface dimension �� depth surface dimension��һ������;
+        //用来处理color surface dimension 和 depth surface dimension不一致问题;
         RenderTargetHandle m_SceneFinalDepthAttachment;
-        //�����������UI����ֿ���Ⱦ;���������������Ⱦ;ui�����gamma��Ⱦ;
+        //将场景相机和UI相机分开渲染;场景相机走线性渲染;ui相机走gamma渲染;
         bool m_SplitUICameraAndSceneCameraRenderer = true;
         public void ChangeSplitUICameraAndSceneCameraRenderer(out bool tag)
         {
@@ -348,7 +348,7 @@ namespace UnityEngine.Rendering.Universal
             bool additionalLightShadows = m_AdditionalLightsShadowCasterPass.Setup(ref renderingData);
             bool transparentsNeedSettingsPass = m_TransparentSettingsPass.Setup(ref renderingData);
             
-            //�����������Ⱦbuffer;
+            //设置相机的渲染buffer;
             RefreshRenderBufferForSingleCamera(context, ref renderingData, ref cameraData, 
                 out bool requiresDepthPrepass, out bool createDepthTexture);
 
@@ -558,8 +558,8 @@ namespace UnityEngine.Rendering.Universal
             }
 #endif
 
-            //���������������Ľ��������RT;
-            //���ֻ��camera mainһ�����,��Ҫgamma����;
+            //将场景相机后处理后的结果拷贝到RT;
+            //如果只有camera main一个相机,则不要gamma矫正;
             if (m_SplitUICameraAndSceneCameraRenderer && cameraData.renderType == CameraRenderType.Base
                 && cameraData.camera == Camera.main && !lastCameraInTheStack)
             {

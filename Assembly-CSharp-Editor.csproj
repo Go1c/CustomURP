@@ -725,6 +725,10 @@
       <Project>{2993de52-b320-7e8c-aff3-9523c682fc8f}</Project>
       <Name>Unity.RenderPipelines.Core.ShaderLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="Coffee.UIParticle.Demo.csproj">
+      <Project>{7bfce7c0-1d9f-48fd-3d31-bab8a2525977}</Project>
+      <Name>Coffee.UIParticle.Demo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
