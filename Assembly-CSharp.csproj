@@ -55,6 +55,7 @@
      <Compile Include="Assets\1.BlurGlass\Scripts\GlassCtrl.cs" />
      <Compile Include="Assets\1.BlurGlass\Scripts\MainRender.cs" />
      <Compile Include="Assets\2.UILinear2GammaTest\AutoLoadPipelineAsset.cs" />
+     <Compile Include="Assets\6.After-Image Mesh effect\AfterImageMeshEffect.cs" />
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -76,6 +77,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\6.After-Image Mesh effect\After Effect Shader.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
