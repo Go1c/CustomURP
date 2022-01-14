@@ -920,7 +920,6 @@ namespace UnityEngine.Rendering.Universal.Internal
             ref var postProcessingData = ref renderingData.postProcessingData;
             bool hdr = postProcessingData.gradingMode == ColorGradingMode.HighDynamicRange;
             int lutHeight = postProcessingData.lutSize;
-            Debug.LogError(lutHeight);
             int lutWidth = lutHeight * lutHeight;
 
             // Source material setup
